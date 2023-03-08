@@ -1,0 +1,16 @@
+[package]
+name = "harfetch"
+version = "0.1.0"
+license = "MIT"
+authors = ["Joey Lent <supercolbat@protonmail.com>"]
+categories = ["command-line-utilities"]
+edition = "2021"
+
+[dependencies]
+
+# Serializing HAR file
+serde = { version = "1.0.152", features = ["derive"] }
+serde_json = "1.0.94"
+
+# HTTP
+reqwest = { version = "0.11.14", features = ["blocking"] }
